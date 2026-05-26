@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Base dark theme */
+body {
+  @apply bg-slate-900 text-white min-h-screen;
+}
