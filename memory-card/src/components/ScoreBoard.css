@@ -1,0 +1,27 @@
+.scoreboard {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  min-width: 80px;
+}
+
+.score-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
+.score-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
