@@ -1,0 +1,15 @@
+# Single Netlify site serving all three React apps under one domain.
+# Landing page at /, each app under its own subpath.
+[build]
+  command = "bash build-all.sh"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# SPA deep-link fallback — only NexCart uses client-side routing.
+# Real files (assets) are served first; this fires only for unknown paths.
+[[redirects]]
+  from = "/shopping-cart/*"
+  to = "/shopping-cart/index.html"
+  status = 200

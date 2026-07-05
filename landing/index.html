@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swaiba Sohail — React Projects</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 1.5rem;
+      }
+      header { text-align: center; margin-bottom: 3.5rem; max-width: 640px; }
+      h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        background: linear-gradient(135deg, #818cf8, #c084fc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      header p { margin-top: 1rem; color: #94a3b8; font-size: 1.05rem; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 1000px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        background: #1e293b;
+        border: 1px solid #334155;
+        border-radius: 1rem;
+        padding: 1.75rem;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        border-color: #6366f1;
+        box-shadow: 0 12px 30px -12px rgba(99, 102, 241, 0.5);
+      }
+      .badge { font-size: 2rem; margin-bottom: 1rem; }
+      .card h2 { font-size: 1.35rem; font-weight: 700; color: #f1f5f9; }
+      .card p { margin-top: 0.6rem; color: #94a3b8; font-size: 0.95rem; line-height: 1.5; flex-grow: 1; }
+      .stack { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+      .tag {
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: #a5b4fc;
+        background: rgba(99, 102, 241, 0.12);
+        border: 1px solid rgba(99, 102, 241, 0.25);
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+      }
+      .open { margin-top: 1.25rem; font-weight: 600; color: #818cf8; font-size: 0.95rem; }
+      .card:hover .open { color: #a5b4fc; }
+      footer { margin-top: 3.5rem; color: #64748b; font-size: 0.85rem; }
+      footer a { color: #818cf8; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>React Projects</h1>
+      <p>A collection of front-end apps built with React &amp; Vite. Pick one to explore.</p>
+    </header>
+
+    <main class="grid">
+      <a class="card" href="/shopping-cart/">
+        <div class="badge">🛒</div>
+        <h2>NexCart</h2>
+        <p>Dark-themed mock e-commerce store. Browse products, manage a cart, and review your order.</p>
+        <div class="stack">
+          <span class="tag">React Router</span>
+          <span class="tag">Tailwind</span>
+          <span class="tag">FakeStore API</span>
+        </div>
+        <span class="open">Open project →</span>
+      </a>
+
+      <a class="card" href="/memory-card/">
+        <div class="badge">🃏</div>
+        <h2>Memory Card Game</h2>
+        <p>Pokemon memory game. Click every card once — click one twice and it's game over.</p>
+        <div class="stack">
+          <span class="tag">React</span>
+          <span class="tag">PokeAPI</span>
+          <span class="tag">Hooks</span>
+        </div>
+        <span class="open">Open project →</span>
+      </a>
+
+      <a class="card" href="/cv-builder/">
+        <div class="badge">📄</div>
+        <h2>CV Builder</h2>
+        <p>Live-preview résumé builder. Fill in your details and download a polished PDF instantly.</p>
+        <div class="stack">
+          <span class="tag">React</span>
+          <span class="tag">Live preview</span>
+          <span class="tag">PDF export</span>
+        </div>
+        <span class="open">Open project →</span>
+      </a>
+    </main>
+
+    <footer>
+      Built by Swaiba Sohail · <a href="https://github.com/SwaibaSohail/React">Source on GitHub</a>
+    </footer>
+  </body>
+</html>
